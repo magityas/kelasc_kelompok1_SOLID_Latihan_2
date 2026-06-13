@@ -2,9 +2,9 @@ from abc import ABC, abstractmethod
 
 class Koleksi(ABC):
     def __init__(self, kode, judul, tahun):
-        self.kode = kode
-        self.judul = judul
-        self.tahun = tahun
+        self.__kode= kode
+        self.__judul = judul
+        self.__tahun = tahun
         
     @property
     def kode(self):
