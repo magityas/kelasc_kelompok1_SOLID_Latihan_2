@@ -14,10 +14,11 @@ class Majalah(Koleksi):
     def edisi(self):
         return self.__edisi
     
-    def tampilkan_data(self):
+class MajalahPrinter:
+    def tampilkan_data(self,koleksi):
        print(f"=== Data majalah ===")
-       print(f"Kode    : {self.kode}")
-       print(f"Judul   : {self.judul}")
-       print(f"tahun   : {self.tahun}")
-       print(f"Penerbit: {self.penerbit}")
-       print(f"Edisi   : {self.edisi}")
+       print(f"Kode    : {koleksi.kode}")
+       print(f"Judul   : {koleksi.judul}")
+       print(f"tahun   : {koleksi.tahun}")
+       print(f"Penerbit: {koleksi.penerbit}")
+       print(f"Edisi   : {koleksi.edisi}")
