@@ -1,4 +1,4 @@
-from koleksi import Koleksi
+from models.koleksi import Koleksi
 
 class Jurnal(Koleksi):
     def __init__(self, kode, judul, tahun, penerbit, bidang_studi, impact_factor):
