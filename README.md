@@ -13,7 +13,7 @@ Proyek latihan implementasi prinsip **SOLID** menggunakan Python. Aplikasi ini m
 | K3525064 | Maulana Shandy Eka Saputra    | [@shandyeka491](https://github.com/shandyeka491) | Models (`models/dvd.py`, `models/jurnal.py`, `models/koleksi.py`) |
 | K3525086 | Thiraza Naufal Zhafran Windra | [@zhafraz](https://github.com/zhafraz)           | Main Code (`main.py`, `services/perpustakaan_service.py`)         |
 | K3525085 | Sabrosa Noval Rachmadhani     | [@SabronR](https://github.com/SabronR)           | Memory (`repository/memory_repository.py`)                        |
-| K3525079 | Maychel Agitya Prasetyo       | [@Magityas](https://github.com/Magityas)         | Repository (`repository/memory_repository.py`)                    |
+| K3525079 | Maychel Agitya Prasetyo       | [@Magityas](https://github.com/magityas)         | Repository (`repository/memory_repository.py`)                    |
 
 ---
 
