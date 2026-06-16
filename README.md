@@ -6,14 +6,14 @@ Proyek latihan implementasi prinsip **SOLID** menggunakan Python. Aplikasi ini m
 
 ## 👥 Kelompok 1 — Kelas C
 
-| NIM      | Nama                          | GitHub                                           | Bagian                                                            |
-| -------- | ----------------------------- | ------------------------------------------------ | ----------------------------------------------------------------- |
-| K3525075 | Tsalits In'am Illiyyin        | [@tsaliy](https://github.com/tsaliy)             | UI (`ui/console_menu.py`)                                         |
-| K3525028 | Immelda Sekar Mellinda        | [@lmmelda](https://github.com/lmmelda)           | Models (`models/buku.py`, `models/majalah.py`)                    |
-| K3525064 | Maulana Shandy Eka Saputra    | [@shandyeka491](https://github.com/shandyeka491) | Models (`models/dvd.py`, `models/jurnal.py`, `models/koleksi.py`) |
-| K3525086 | Thiraza Naufal Zhafran Windra | [@zhafraz](https://github.com/zhafraz)           | Main Code (`main.py`, `services/perpustakaan_service.py`)         |
-| K3525085 | Sabrosa Noval Rachmadhani     | [@SabronR](https://github.com/SabronR)           | Memory (`repository/memory_repository.py`)                        |
-| K3525079 | Maychel Agitya Prasetyo       | [@Magityas](https://github.com/magityas)         | Repository (`repository/memory_repository.py`)                    |
+| NIM | Nama | GitHub | Bagian |
+|---|---|---|---|
+| K3525028 | Immelda Sekar Mellinda | [@lmmelda](https://github.com/lmmelda) | Models (`models/buku.py`, `models/majalah.py`) |
+| K3525064 | Maulana Shandy Eka Saputra | [@shandyeka491](https://github.com/shandyeka491) | Models (`models/dvd.py`, `models/jurnal.py`, `models/koleksi.py`) |
+| K3525085 | Sabrosa Noval Rachmadhani | [@SabronR](https://github.com/SabronR) | Repository (`repository/memory_repository.py`) |
+| K3525079 | Maychel Agitya Prasetyo | [@Magityas](https://github.com/Magityas) | Repository (`repository/memory_repository.py`) |
+| K3525086 | Thiraza Naufal Zhafran Windra | [@zhafraz](https://github.com/zhafraz) | Main Code (`main.py`, `services/perpustakaan_service.py`) |
+| K3525075 | Tsalits In'am Illiyyin | [@tsaliy](https://github.com/tsaliy) | UI (`ui/console_menu.py`) |
 
 ---
 
@@ -41,28 +41,22 @@ SOLID-Latihan-2/
 ## 🧱 Implementasi Prinsip SOLID
 
 ### S — Single Responsibility Principle
-
 Setiap class memiliki satu tanggung jawab:
-
 - `Buku`, `DVD`, `Jurnal`, `Majalah` → hanya menyimpan data koleksi
 - `BukuPrinter`, `DVDPrinter`, dll → hanya menangani tampilan data
 - `PerpustakaanService` → hanya menangani logika bisnis & validasi
 - `UI` → hanya menangani interaksi dengan pengguna
 
 ### O — Open/Closed Principle
-
 Sistem terbuka untuk ekstensi (menambah jenis koleksi baru) tanpa mengubah kode yang sudah ada. Cukup buat class baru yang mewarisi `Koleksi` dan tambahkan `Printer`-nya.
 
 ### L — Liskov Substitution Principle
-
 `Buku`, `DVD`, `Jurnal`, dan `Majalah` merupakan turunan dari `Koleksi` dan dapat digunakan secara bergantian di repository tanpa mengubah perilaku sistem.
 
 ### I — Interface Segregation Principle
-
 `KoleksiRepository` mendefinisikan antarmuka yang ramping dan fokus (`tambah`, `ambil_semua`, `cari`, `hapus`) sehingga implementasi tidak dipaksa mengimplementasikan method yang tidak relevan.
 
 ### D — Dependency Inversion Principle
-
 `PerpustakaanService` bergantung pada abstraksi `KoleksiRepository`, bukan pada implementasi konkret `MemoryRepository`. `UI` bergantung pada `PerpustakaanService`, bukan langsung ke repository.
 
 ---
@@ -82,7 +76,7 @@ Sistem terbuka untuk ekstensi (menambah jenis koleksi baru) tanpa mengubah kode 
 
 ```bash
 # Clone repositori
-git clone https://github.com/magityas/kelasc_kelompok1_SOLID-Latihan-2
+git clone https://github.com/<username>/SOLID-Latihan-2.git
 cd SOLID-Latihan-2
 
 # Jalankan aplikasi
